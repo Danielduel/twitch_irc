@@ -35,4 +35,5 @@ client.on("open", () => {
 client.on("error", (e) => console.error(e));
 
 // @ts-expect-error: debugging
-window.client = client;
+globalThis.client = client;
+

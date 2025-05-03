@@ -15,4 +15,5 @@ client.on("open", async () => {
 });
 
 // @ts-expect-error: debugging
-window.client = client;
+globalThis.client = client;
+

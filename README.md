@@ -96,8 +96,8 @@ use.
 
 Specify the `--inspect-brk` flag to inspect any of the examples using developer
 tools. For example, for Chrome it's `chrome://inspect` ->
-`Open dedicated DevTools for Node`. The client is available on the window object
-as `window.client`.
+`Open dedicated DevTools for Node`. The client is available on the globalThis
+object as `globalThis.client`.
 
 #### Simple chat logging (anonymous)
 

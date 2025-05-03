@@ -7,8 +7,8 @@ export class JoinQueue {
   private _rateLimiter: RateLimiter;
   private _sender: Sender<RawMessage>;
   private _timer = {
-    set: setTimeout.bind(window),
-    clear: clearTimeout.bind(window),
+    set: setTimeout.bind(globalThis),
+    clear: clearTimeout.bind(globalThis),
   };
   private _paused = false;
   // deno-lint-ignore no-explicit-any
@@ -58,8 +58,8 @@ export class PrivmsgQueue {
   private _channels: Record<Channel, PrivmsgDispatchContext> = {};
   private _sender: Sender<RawMessage>;
   private _timer = {
-    set: setTimeout.bind(window),
-    clear: clearTimeout.bind(window),
+    set: setTimeout.bind(globalThis),
+    clear: clearTimeout.bind(globalThis),
   };
   private _getSocketState: GetSocketState;
 
