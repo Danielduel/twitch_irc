@@ -1,6 +1,6 @@
 export * from "./lib/client.ts";
 export { Message, unescape } from "./lib/message.ts";
-export { User } from "./lib/message/common.ts";
+export type { User } from "./lib/message/common.ts";
 export type {
   Capability,
   Channel,
