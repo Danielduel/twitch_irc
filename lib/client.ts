@@ -238,7 +238,7 @@ export class Client {
    *
    * `channel` must begin with `#`.
    */
-  joined(channel: Channel) {
+  joined(channel: Channel): boolean {
     return this._channels.has(channel);
   }
 
