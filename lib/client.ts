@@ -410,7 +410,7 @@ type WithoutData = {
     ChatEventData[K];
 };
 
-type ChatEventData = {
+export type ChatEventData = {
   open: void;
   close: void;
   error: unknown;
